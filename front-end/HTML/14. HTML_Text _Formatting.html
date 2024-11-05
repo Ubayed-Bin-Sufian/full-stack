@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        b { 
+          font-weight: bold;
+        }
+        em { 
+            font-style: italic;
+        }
+        i { 
+            font-style: italic;
+        }
+        span.small {
+            font-size: smaller;
+        }
+        strong { 
+            font-weight: bold;
+        }
+        sub {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        sup {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        del {
+            background-color: tomato;
+            text-decoration: line-through;
+        }
+        ins {
+            background-color: yellow;
+            text-decoration: underline;
+        }
+        mark { 
+            background-color: yellow;
+            color: black;
+        }
+        </style>
+        
+    </head>   
+    <body>
+
+        <p>This text is normal.</p>
+
+        <h1>The b element</h1>
+            <p><b>This text is bold</b></p>
+            
+        <h2>Use CSS to Set Bold Text</h1>
+
+            <p>This is normal text - <span style="font-weight:bold;">and this is bold text</span>.</p>
+
+        <h1>The strong element</h1>
+
+            <p><strong>This text is important!</strong></p>
+
+        <h1>The i element</h1>
+
+            <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+            <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+            <p><i>This text is italic</i></p>
+
+        <h1>The em element</h1>
+
+            <p>You <em>have</em> to hurry up!</p>
+            <p>We <em>cannot</em> live like this.</p>
+            <p><em>This text is emphasized.</em></p>
+
+        <h1>The sub and sup elements</h1>
+
+            <p>This is<sub> subscript</sub> and <sup>superscript.</sup></p>
+
+        <h1>The small element</h1>
+
+            <p>This is normal text. <small>This is some smaller text.</small></p>
+
+        <h2>Use CSS to define smaller text</h1>
+
+            <p>This is some normal text. <span class="small">This is some smaller text.</span></p>
+        
+        <h1>The mark element</h1>
+
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+        
+        <h1>The ins element</h1>
+
+        <h2>The del and ins elements + CSS</h1>
+
+            <p>My favorite color is <del>blue</del> red.</p>
+            <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+        <h2>The ins cite attribute</h1>
+
+            <p title="Cite attribute added">This is a text. <ins cite="why_inserted.htm">This is an inserted text.</ins></p>
+            
+            <p><b>Note:</b> The cite attribute does not render as anything special in any of the major browsers.</p>
+        
+        <h2>The ins datetime attribute</h1>
+
+            <p title="datetime attribute added">This is a text. <ins datetime="2015-09-15T22:55:03Z">This is an inserted text.</ins></p>
+            
+            <p><b>Note:</b> The datetime attribute does not render as anything special in any of the major browsers.</p>
+    </body>
+</html>
