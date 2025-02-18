@@ -24,12 +24,12 @@
 
         <p>JavaScript can change the content of an HTML element:</p>
 
-        <button type="button" onclick="myFunction()">Click Me!</button>
+        <button type="button" onclick="myFunction1()">Click Me!</button>
 
         <p id="demo2">This is a demonstration.</p>
 
         <script>
-            function myFunction() { 
+            function myFunction1() { 
                 document.getElementById("demo2").innerHTML = "Hello JavaScript!";
             }
         </script>
@@ -39,14 +39,14 @@
         <p id="demo3">JavaScript can change the style of an HTML element.</p>
 
         <script>
-            function myFunction() {
+            function myFunction2() {
                 document.getElementById("demo3").style.fontSize = "25px"; 
                 document.getElementById("demo3").style.color = "red";
                 document.getElementById("demo3").style.backgroundColor = "yellow";        
             }
         </script>
 
-        <button type="button" onclick="myFunction()">Click Me!</button>
+        <button type="button" onclick="myFunction2()">Click Me to change styles!</button>
 
         <h1>My Fourth JavaScript</h1>
 
@@ -56,25 +56,25 @@
             function light(sw) {
             var pic;
             if (sw == 0) {
-                pic = "pic_bulboff.gif"
+                pic = "./images/pic_bulboff.gif";
             } else {
-                pic = "pic_bulbon.gif"
+                pic = "./images/pic_bulbon.gif";
             }
                 document.getElementById('myImage').src = pic;
             }
         </script>
 
-        <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+        <img id="myImage" src="./images/pic_bulboff.gif" width="100" height="180">
 
         <p>
             <button type="button" onclick="light(1)">Light On</button>
             <button type="button" onclick="light(0)">Light Off</button>
         </p>
 
-        <p id="demo"></p>
+        <p id="demo4"></p>
 
         <script>
-            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            document.getElementById("demo4").innerHTML = "Hello JavaScript!";
         </script>
 
         <noscript>Sorry, your browser does not support JavaScript!</noscript>
