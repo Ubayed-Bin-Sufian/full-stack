@@ -122,5 +122,38 @@
     <input type="submit" value="Submit">
   </form>
 
+  <h2>The datalist Element</h2>
+
+  <p>The datalist element specifies a list of pre-defined options for an input element.</p>
+
+  <form action="https://www.w3schools.com/action_page.php">
+    <input list="AI tools" name="AI tools">
+    <datalist id="AI tools">
+      <option value="Google Bard">
+      <option value="ChatGPT">
+      <option value="Perplexity">
+      <option value="Claude">
+      <option value="DeepSeek">
+      <option value="Gemini">
+      <option value="">
+    </datalist>
+    <input type="submit">
+  </form>
+
+  <h2>The output Element</h2>
+  <p>The output element represents the result of a calculation.</p>
+
+  <form action="https://www.w3schools.com/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    0
+    <input type="range" id="a" name="a" value="50">
+    100 +
+    <input type="number" id="b" name="b" value="50">
+    =
+    <output name="x" for="a b"></output>
+    <br><br>
+    <input type="submit">
+  </form>
+
 </body>
 </html>
