@@ -143,5 +143,52 @@
     <input type="submit" value="Submit">
   </form>
 
+  <h2>The input height and width attributes</h2>
+
+  <p>The height and width attributes specify the height and width of an input type="image" element.</p>
+
+  <form action="https://www.w3schools.com/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="image" src="/front-end/HTML/images/img_submit.gif" alt="Submit" width="24" height="24">
+  </form>
+
+  <p><b>Note:</b> The input type="image" sends the X and Y coordinates of the click that activated the image button.</p>
+
+  <h2>The input list attribute</h2>
+
+  <p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+  <form action="https://www.w3schools.com/action_page.php">
+    <input list="browsers" name="browser">
+    <datalist id="browsers">
+      <option value="Microsoft Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+      <option value="Internet Explorer">
+    </datalist>
+    <input type="submit" value="Submit">
+  </form>
+
+  <h2>The autocomplete attribute</h2>
+
+  <p>The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.</p>
+  <p>Fill in and submit the form, then reload the page to see how autocomplete works.</p>
+  <p>Notice that autocomplete is "on" for the form, but "off" for the e-mail field!</p>
+
+  <form action="https://www.w3schools.com/action_page.php" autocomplete="on">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete="off"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
 </body>
 </html>
