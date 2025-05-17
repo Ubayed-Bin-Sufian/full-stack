@@ -20,5 +20,19 @@
     ctx.stroke();
   </script>
 
+  <h2>Draw a circle</h2>
+
+  <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+   Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <script>
+    var c = document.getElementById("myCanvas2");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.stroke();
+  </script>
+
 </body>
 </html>
