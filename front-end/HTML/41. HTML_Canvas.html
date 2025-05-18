@@ -2,6 +2,8 @@
 <html>
 <body>
 
+  <p><strong>Canvas is a blank piece of paper, and JavaScript is the pen you use to draw on it.</strong></p>
+
   <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
     Your browser does not support the HTML canvas tag.
   </canvas><br>
@@ -32,6 +34,19 @@
     ctx.beginPath();
     ctx.arc(95,50,40,0,2*Math.PI);
     ctx.stroke();
+  </script>
+
+  <h2>Draw a text</h2>
+
+  <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <script>
+    var c = document.getElementById("myCanvas3");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World",10,50);
   </script>
 
 </body>
