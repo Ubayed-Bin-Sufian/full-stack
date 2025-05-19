@@ -49,5 +49,18 @@
     ctx.fillText("Hello World",10,50);
   </script>
 
+  <h2>Draw a stroke text</h2>
+
+  <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.
+  </canvas>
+
+  <script>
+    var c = document.getElementById("myCanvas4");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.strokeText("Hello World",25,60);
+  </script>
+
 </body>
 </html>
