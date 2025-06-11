@@ -8,6 +8,12 @@
             padding: 10px;
             border: 1px solid #aaaaaa;
         }
+        #div2 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
     </style>
     <script>
         function dragstartHandler(ev) {
@@ -31,9 +37,17 @@
 
     <p>Drag the W3Schools image into the rectangle:</p>
 
-    <div id="div1" ondrop="dropHandler(event)"   ondragover="dragoverHandler(event)"></div>
+    <div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
     <br>
     <img id="img1" src="./images/img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="336" height="69">
+
+    <h1>Drag and Drop API: h1 element to div element</h1>
+
+    <p>Drag and drop the W3Schools header into the rectangle:</p>
+
+    <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <br>
+    <h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1>
 
 </body>
 </html>
