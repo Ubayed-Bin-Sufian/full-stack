@@ -14,6 +14,12 @@
             padding: 10px;
             border: 1px solid #aaaaaa;
         }
+        #div3 {
+            width: 350px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
     </style>
     <script>
         function dragstartHandler(ev) {
@@ -48,6 +54,15 @@
     <div id="div2" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
     <br>
     <h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</h1>
+
+    <h1>Drag and Drop API: a element to div element</h1>
+
+    <p>Drag and drop the W3Schools link into the rectangle:</p>
+
+    <div id="div3" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+    <br>
+
+    <a id="link1" href="https://w3schools.com" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</a>
 
 </body>
 </html>
