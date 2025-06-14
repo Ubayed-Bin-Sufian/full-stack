@@ -20,6 +20,14 @@
             padding: 10px;
             border: 1px solid #aaaaaa;
         }
+        #div4, #div5 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
     </style>
     <script>
         function dragstartHandler(ev) {
@@ -64,5 +72,14 @@
 
     <a id="link1" href="https://w3schools.com" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com</a>
 
+    <h1>Drag and Drop API</h1>
+
+    <p>Drag the image back and forth between the two div elements.</p>
+
+    <div id="div4" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">
+    <img id="img2" src="./images/img_w3slogo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="88" height="31">
+    </div>
+
+    <div id="div5" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
 </body>
 </html>
