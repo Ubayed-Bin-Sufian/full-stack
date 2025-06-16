@@ -6,12 +6,30 @@
 
     <div id="result"></div>
 
+    <div id="result1"></div>
+
     <script>
         const x = document.getElementById("result");
         if (typeof(Storage) !== "undefined") {
             x.innerHTML = "Your browser supports Web storage!";
         } else {
             x.innerHTML = "Sorry, no Web storage support!";
+        }
+    </script>
+
+    <script>
+        const y = document.getElementById("result1");
+
+        // Check browser support
+        if (typeof(Storage) !== "undefined") {
+            // Store
+            localStorage.setItem("lastname", "Smith");
+            localStorage.setItem("bgcolor", "yellow");
+            // Retrieve
+            y.innerHTML = localStorage.getItem("lastname");
+            y.style.backgroundColor = localStorage.getItem("bgcolor");
+        } else {
+            y.innerHTML = "Sorry, no Web storage support!";
         }
     </script>
 
