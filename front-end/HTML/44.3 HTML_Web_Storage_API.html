@@ -1,5 +1,22 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <script>
+        function clickCounter() {            
+            const z = document.getElementById("result2");
+            if (typeof(Storage) !== "undefined") {
+                if (localStorage.clickcount) {
+                    localStorage.clickcount = Number(localStorage.clickcount)+1;
+                } else {
+                    localStorage.clickcount = 1;
+                }
+                z.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s)!";
+            } else {
+                z.innerHTML = "Sorry, no Web storage support!";
+            }
+        }
+    </script>
+</head>
 <body>
 
     <h1>Browser test for Web Storage API</h1>
@@ -32,6 +49,13 @@
             y.innerHTML = "Sorry, no Web storage support!";
         }
     </script>
+
+    <h1>localStorage</h1>
+
+    <button onclick="clickCounter()" type="button">Click me!</button>
+    <p id="result2"></p>
+    <p>Click the button to see the counter increase.</p>
+    <p>Close the browser tab (or window), and try again, and the counter will continue to count.</p>
 
 </body>
 </html>
