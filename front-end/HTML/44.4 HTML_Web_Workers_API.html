@@ -17,8 +17,8 @@
                 if(typeof(w) == "undefined") {
                     w = new Worker("demo_workers.js");
                 }
-                    w.onmessage = function(event) {
-                    x.innerHTML = event.data;
+                w.onmessage = function(event) {
+                x.innerHTML = event.data;
                 };
             } else {
                 x.innerHTML = "Sorry! No Web Worker support.";
