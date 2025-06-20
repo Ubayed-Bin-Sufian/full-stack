@@ -31,5 +31,18 @@
         }
     </script>
 
+    <h1>Browser test for Web Worker API</h1>
+
+    <div id="result1"></div>
+
+    <script>
+        const x = document.getElementById("result1");
+        if(typeof(Worker) !== "undefined") {
+            x.innerHTML = "Your browser support Web Workers!";
+        } else {
+            x.innerHTML = "Sorry, your browser does not support Web Workers.";
+        }
+    </script>
+
 </body>
 </html>
