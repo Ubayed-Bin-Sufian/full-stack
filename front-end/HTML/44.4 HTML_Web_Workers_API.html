@@ -8,6 +8,7 @@
     <button onclick="startWorker()">Start Worker</button> 
     <button onclick="stopWorker()">Stop Worker</button>
 
+    // The script below creates a web worker that counts numbers in the background.
     <script>
         let w;
 
@@ -18,7 +19,7 @@
                     w = new Worker("demo_workers.js");
                 }
                 w.onmessage = function(event) {
-                x.innerHTML = event.data;
+                    x.innerHTML = event.data;
                 };
             } else {
                 x.innerHTML = "Sorry! No Web Worker support.";
@@ -35,6 +36,7 @@
 
     <div id="result1"></div>
 
+    // The script below checks if the browser supports Web Workers.
     <script>
         const x = document.getElementById("result1");
         if(typeof(Worker) !== "undefined") {
