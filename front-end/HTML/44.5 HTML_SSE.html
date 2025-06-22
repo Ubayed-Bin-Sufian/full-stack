@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h1>Getting Server Updates</h1>
+
+  <p><strong>Note:</strong>If you have PHP installed, just run this command in your project folder: php -S localhost:8000. Then open your browser and go to: http://localhost:8000/front-end/HTML/44.5%20HTML_SSE.html</p>
+
+  <div id="result"></div>
+
+  <script>
+    const x = document.getElementById("result");
+    if(typeof(EventSource) !== "undefined") {
+      var source = new EventSource("demo_sse.php");
+      source.onmessage = function(event) {
+        x.innerHTML += event.data + "<br>";
+      };
+    } else {
+      x.innerHTML = "Sorry, no support for server-sent events.";
+    }
+  </script>
+
+</body>
+</html>
