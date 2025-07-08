@@ -15,9 +15,14 @@ package main
 // 	return lim
 // }
 
+// // Both calls to pow return their results before the call to fmt.Println in main begins.
 // func main() {
 // 	fmt.Println(
 // 		pow(3, 2, 10),
 // 		pow(3, 3, 20),
 // 	)
 // }
+
+// Output:
+// 27 >= 20
+// 9 20
