@@ -1,13 +1,13 @@
 package main
 
-import "fmt"
+// import "fmt"
 
-// The defer statement defers the execution of a function until the surrounding function returns.
-func main() {
-	defer fmt.Println("world")
+// // The defer statement defers the execution of a function until the surrounding function returns.
+// func main() {
+// 	defer fmt.Println("world")
 
-	fmt.Println("hello")
-}
+// 	fmt.Println("hello")
+// }
 
 // Output:
 // hello
