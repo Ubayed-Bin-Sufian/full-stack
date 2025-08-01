@@ -5,6 +5,7 @@ package main
 // 	"strings"
 // )
 
+// // Slices can contain any type, including other slices.
 // func main() {
 // 	// Create a tic-tac-toe board.
 // 	board := [][]string{
@@ -24,3 +25,8 @@ package main
 // 		fmt.Printf("%s\n", strings.Join(board[i], " "))
 // 	}
 // }
+
+// Output:
+// X _ X
+// O _ X
+// _ _ O
