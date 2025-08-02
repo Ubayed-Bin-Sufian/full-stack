@@ -4,10 +4,30 @@ package main
 
 // func main() {
 // 	pow := make([]int, 10)
+// 	// fmt.Println(pow)
+	
+// 	// If you only want the index, you can omit the second variable.
 // 	for i := range pow {
 // 		pow[i] = 1 << uint(i) // == 2**i
 // 	}
+// 	// fmt.Println(pow)
+	
+// 	// You can skip the index or value by assigning to _.
 // 	for _, value := range pow {
 // 		fmt.Printf("%d\n", value)
 // 	}
 // }
+
+// Output:
+// [0 0 0 0 0 0 0 0 0 0 0]
+// [1 2 4 8 16 32 64 128 256 512]
+// 1
+// 2
+// 4
+// 8
+// 16
+// 32
+// 64
+// 128
+// 256
+// 512
