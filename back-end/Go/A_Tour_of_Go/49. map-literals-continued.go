@@ -6,11 +6,16 @@ package main
 // 	Lat, Long float64
 // }
 
+// // If the top-level type is just a type name, 
+// // you can omit it from the elements of the literal.
 // var m = map[string]Vertex{
-// 	"Bell Labs": {40.68433, -74.39967},
-// 	"Google":    {37.42202, -122.08408},
+// 	"Bell Labs": {40.68433, -74.39967},  // Type Vertex removed
+// 	"Google":    {37.42202, -122.08408},  // Type Vertex removed
 // }
 
 // func main() {
 // 	fmt.Println(m)
 // }
+
+// Output:
+// map[Bell Labs:{40.68433 -74.39967} Google:{37.42202 -122.08408}]
