@@ -10,6 +10,10 @@ package main
 // 	}
 // }
 
+// // the adder function returns a closure
+// // A closure is a function value that references variables from outside its body. 
+// // The function may access and assign to the referenced variables; in this sense 
+// // the function is "bound" to the variables.
 // func main() {
 // 	pos, neg := adder(), adder()
 // 	for i := 0; i < 10; i++ {
