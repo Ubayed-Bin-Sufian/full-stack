@@ -9,6 +9,9 @@ package main
 // 	X, Y float64
 // }
 
+// // A method is a function with a special receiver argument.
+// // The receiver appears in its own argument list between the func keyword and the method name.
+// // (v Vertex) is the receiver
 // func (v Vertex) Abs() float64 {
 // 	return math.Sqrt(v.X*v.X + v.Y*v.Y)
 // }
@@ -17,3 +20,6 @@ package main
 // 	v := Vertex{3, 4}
 // 	fmt.Println(v.Abs())
 // }
+
+// Output:
+// 5
