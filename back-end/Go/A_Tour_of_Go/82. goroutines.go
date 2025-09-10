@@ -13,6 +13,7 @@ package main
 // }
 
 // func main() {
+// 	// starts a new goroutine that runs say("world") concurrently
 // 	go say("world")
 // 	say("hello")
 // }
