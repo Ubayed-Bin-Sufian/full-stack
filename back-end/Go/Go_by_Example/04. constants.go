@@ -19,3 +19,9 @@ func main() {
 
     fmt.Println(math.Sin(n))
 }
+
+// Output:
+// constant
+// 60000000000
+// 60000000000
+// -0.28470407323754404
