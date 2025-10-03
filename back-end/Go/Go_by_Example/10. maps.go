@@ -7,6 +7,8 @@ import (
 
 func main() {
 
+    // To create an empty map, use the builtin make: 
+    // make(map[key-type]val-type).
     m := make(map[string]int)
 
     m["k1"] = 7
