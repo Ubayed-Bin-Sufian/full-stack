@@ -14,6 +14,22 @@ public class MathDemo {
 		System.out.println(Math.log(Math.E));
 		System.out.println(Math.pow(2,3));
 		System.out.println(Math.sqrt(25));
+
+		// Rounding methods
+		System.out.println(Math.ceil(78.1));  // round up
+		System.out.println(Math.floor(96.2));  // round down
+		// round to nearest integer, for 0.5 even -> round down; odd -> round up
+		System.out.println(Math.rint(56.4));    
+		System.out.println(Math.sqrt(25));
+		
+		// Max, min, absolute
+		System.out.println(Math.max(2, 10));
+		System.out.println(Math.min(-6, 78.2));
+		System.out.println(Math.abs(-9.65));  // absolute number
+		
+		// random method
+		System.out.println(Math.random()); // 0.0 - 1.0
+		System.out.println((int) (1 + Math.random() * 10)); // 1 - 10
 		
 	}
 
