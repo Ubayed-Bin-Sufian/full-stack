@@ -5,7 +5,7 @@ public class StringDemo {
 	public static void main(String[] args) {
 		
 		String s = "     Welcome to Java! ";
-		String s1 = "Tahsin is dedicated";
+		String s1 = "Tahsin is dedicated in his studies";
 		
 		// Display the length & the character at index 20 in the string
 		System.out.println(s.length());
@@ -18,7 +18,6 @@ public class StringDemo {
 		// Remove leading and trailing spaces
 		System.out.println(s.trim());
 		System.out.println(s);
-		
 		
 		String t = "Hello";
 		String t1 = "Hello";
@@ -37,6 +36,22 @@ public class StringDemo {
 			System.out.println(t + "\n" + t2);
 		else
 			System.out.println(t2 + "\n" + t);
+
+		// Check if string starts with a specific word
+		if (s1.startsWith("Tahsin"))
+			System.out.println("He is probably your cousin.");
+		
+		// Check if string ends with a specific word
+		if (s1.endsWith("studies"))
+			System.out.println("We need to stop thinking about it.");
+		
+		// Check if string contains a specific word
+		if (s1.contains("dedicated"))
+			System.out.println("Great to know! Please keep the flow.");
+		
+		// Convert the string to uppercase and lowercase
+		System.out.println(s1.toUpperCase());
+		System.out.println(s1.toLowerCase());
 		
 	}
 
