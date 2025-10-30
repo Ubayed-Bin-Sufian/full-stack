@@ -2,6 +2,14 @@ package chapter4;
 
 import java.util.Scanner;
 
+/**
+ * Convert a hex digit to a decimal value
+ * Use character and strings
+ * Learn how to read a string & extract characters from the string
+ * and convert a character to a number
+ *
+ */
+
 public class HexDigit2Dec {
 	
   public static void main(String[] args) {	  
@@ -16,6 +24,7 @@ public class HexDigit2Dec {
     }
     
     // Display decimal value for the hex digit
+    // https://www.asciitable.com/
     char ch = Character.toUpperCase(hexString.charAt(0));    
     if ('A' <= ch && ch <= 'F') {
       int value = ch - 'A' + 10;
