@@ -18,6 +18,7 @@ public class GreatCircleDistance {
 	    double x2 = input.nextDouble();
 	    double y2 = input.nextDouble();
 	    
+		// Formula to find the shortest distance between 2 points on the surface of earth
 	    double d = 6371.01 * Math.acos(Math.sin(Math.toRadians(x1)) * Math.sin(Math.toRadians(x2)) 
 	    		+ Math.cos(Math.toRadians(x1)) * Math.cos(Math.toRadians(x2)) *
 	    		Math.cos(Math.toRadians(y1 - y2)));
