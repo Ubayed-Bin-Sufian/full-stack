@@ -28,8 +28,6 @@ It's equivalent to <?php echo 'print this string' ?>.
             'after the PHP code which could cause "headers already sent" '.
             'errors'; ?>
 
-<?php
-
 
 // Example #2 PHP Code Only File
 
@@ -40,3 +38,9 @@ echo "Hello world\n";
 echo "Last statement\n";
 
 // the script ends here with no PHP closing tag
+
+// Example #3 Embedding PHP in HTML
+
+<p>This is going to be ignored by PHP and displayed by the browser.</p>
+<?php echo 'While this is going to be parsed.'; ?>
+<p>This will also be ignored by PHP and displayed by the browser.</p>
