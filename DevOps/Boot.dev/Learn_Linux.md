@@ -4,6 +4,8 @@
 
 `echo "Hello World"` (Outputs Hello World) <br>
 `whoami` (Displays the current user) <br>
+`history` (Shows command history) <br>
+`clear` & `Ctrl + L` (Clears the terminal screen) <br>
 
 ## Glossary 
 
