@@ -16,3 +16,14 @@
 `git remote add origin <repository_url>` (Add a remote repository) <br>
 `git remote -v` (View remote repositories) <br>
 `git push origin main` (Push changes to the remote repository on the main branch) <br>
+`git branch <branch_name>` (Create a new branch) <br>
+`git switch <branch_name>` (Switch to a different branch) <br>
+`git merge <branch_name>` (Merge a branch into the current branch) <br>
+`git remote add upstream <original_repository_url>` (Add the original repository as a remote) <br>
+
+## Glossary
+
+- **HEAD**: A reference to the latest commit in the current branch. <br>
+- **Commit**: A snapshot of changes in the repository. <br>
+- **fork**: A personal copy of someone else's repository. <br>
+- **upstream**: The original repository from which a fork was created. <br>
