@@ -20,6 +20,7 @@
 `git switch <branch_name>` (Switch to a different branch) <br>
 `git merge <branch_name>` (Merge a branch into the current branch) <br>
 `git remote add upstream <original_repository_url>` (Add the original repository as a remote) <br>
+`git push origin <branch_name> -f` (Force push changes to a branch) <br>
 
 ## Glossary
 
