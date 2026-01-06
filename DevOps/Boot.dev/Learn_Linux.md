@@ -7,6 +7,9 @@
 `history` (Shows command history) <br>
 `clear` & `Ctrl + L` (Clears the terminal screen) <br>
 `pwd` (Prints the current working directory; pwd: print working directory) <br>
+`ls` (Lists files and directories in the current directory) <br>
+`cd <directory>` (Changes the current directory to the specified directory) <br>
+`cd ..` (Moves up one directory level) <br>
 
 ## Glossary 
 
