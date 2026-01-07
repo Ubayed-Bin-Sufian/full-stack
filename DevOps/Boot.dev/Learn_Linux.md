@@ -21,3 +21,5 @@
 - **directory**: A folder in a file system that contains files and other directories.
 - **root directory**: The top-level directory in a file system hierarchy, denoted by a forward slash (/).
 - **home directory**: The default directory assigned to a user for storing personal files, typically located at /home/username.
+- **relative path**: A file or directory path that is specified in relation to the current working directory.
+- **absolute path**: A complete file or directory path that starts from the root directory and specifies the full location of a file or directory.
